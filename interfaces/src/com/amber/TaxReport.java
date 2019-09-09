@@ -1,16 +1,26 @@
 package com.amber;
 
 public class TaxReport {
-    private TaxCalculator2018 calculator;
+    private TaxCalculator calculator;
 
-    public  TaxReport() {
-        calculator = new TaxCalculator2018(100_000);
+
+    //CONSTRUCTOR
+    public  TaxReport(TaxCalculator calculator) {
+        this.calculator = calculator;
     }
 
-    public void show() {
+//    //SETTER
+//    public void setCalculator(TaxCalculator calculator) {
+//        this.calculator = calculator;
+//    }
+
+    //GETTER
+    public void show(TaxCalculator calculator) {
         var tax = calculator.calculateTax();
         System.out.println(tax);
     }
 }
 // DEPENDENCY INJECTION: a chef is different from a waitress. in the same rest
 //constructor
+
+// DONT NEED constructor WITH METHOD INJECTIOON
