@@ -9,6 +9,8 @@ public class TaxCalculator2018 implements TaxCalculator {
 
     @Override
     public double calculateTax() {
+        // cannot re assign the number because it is constant in the interface
+//        TaxCalculator.minimumTax = 8;
         return taxableIncome * .08;
     }
 
