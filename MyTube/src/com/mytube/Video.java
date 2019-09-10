@@ -15,7 +15,7 @@ public class Video {
         this.user = user;
     }
 
-    private String getFileName() {
+    public String getFileName() {
         return fileName;
     }
 
@@ -23,7 +23,7 @@ public class Video {
         this.fileName = fileName;
     }
 
-    private String getTitle() {
+    public String getTitle() {
         return title;
     }
 
