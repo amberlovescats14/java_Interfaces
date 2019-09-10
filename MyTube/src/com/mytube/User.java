@@ -7,11 +7,11 @@ public class User {
         this.email = email;
     }
 
-    public String getEmail() {
+    private String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    private void setEmail(String email) {
         this.email = email;
     }
 }
